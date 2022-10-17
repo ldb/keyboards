@@ -27,10 +27,10 @@ COMBO(left_bracket, &kp LEFT_BRACKET, 11 12, NUM)
 COMBO(right_bracket, &kp RIGHT_BRACKET, 12 13, NUM)
 COMBO(brackets, &macro_brackets, 11 12 13, NUM)
 
-// LT GT
-COMBO(less_than, &kp LESS_THAN, 21 22, NUM)
-COMBO(greater_than, &kp GREATER_THAN, 22 23, NUM)
-COMBO(ltgt, &macro_ltgt, 21 22 23, NUM)
+// Braces
+COMBO(left_brace, &kp LEFT_BRACE, 21 22, NUM)
+COMBO(right_brace, &kp RIGHT_BRACE, 22 23, NUM)
+COMBO(braces, &macro_braces, 21 22 23, NUM)
 
 // Text processing
 COMBO(undo, &kp LG(Z), 20 21, BASE)
