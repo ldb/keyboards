@@ -16,7 +16,7 @@
 
 	vbatt: vbatt {
 		compatible = "zmk,battery-nrf-vddh";
-		label = "VBATT";
+		label = "BATTERY";
 	}; 
 
 	default_transform: keymap_transform_1 {
