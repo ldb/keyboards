@@ -11,13 +11,7 @@
 		//zephyr,display = &oled;
 		zmk,kscan = &kscan0;
 		zmk,matrix_transform = &default_transform;
-		zmk,battery = &vbatt;
 	};
-
-	vbatt: vbatt {
-		compatible = "zmk,battery-nrf-vddh";
-		label = "BATTERY";
-	}; 
 
 	default_transform: keymap_transform_1 {
 		compatible = "zmk,matrix-transform";
