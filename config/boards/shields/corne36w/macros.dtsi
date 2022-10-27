@@ -20,3 +20,6 @@ MACRO(power, &macro_tap_time 1000 &kp C_POWER)
 
 // Gaming Layer
 MACRO(game_layer, &tog GAME)
+
+// CMD + Tab
+MACRO(cmd_tab, &kp LGUI &kp TAB)
