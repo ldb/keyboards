@@ -22,4 +22,4 @@ MACRO(power, &macro_tap_time 1000 &kp C_POWER)
 MACRO(game_layer, &tog GAME)
 
 // CMD + Tab
-MACRO(cmd_tab, &kp LGUI &kp TAB)
+MACRO(cmd_tab, &sk LGUI &kp TAB)
