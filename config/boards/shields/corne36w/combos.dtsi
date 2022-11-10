@@ -32,6 +32,8 @@ COMBO(left_brace, &kp LEFT_BRACE, 21 22, NUM)
 COMBO(right_brace, &kp RIGHT_BRACE, 22 23, NUM)
 COMBO(braces, &macro_braces, 21 22 23, NUM)
 
+COMBO(cmd_back, &macro_cmd_back, 7 8, NAV)
+
 // Text processing
 COMBO(undo, &kp LG(Z), 20 21, BASE)
 COMBO(cut, &kp LG(X), 21 23, BASE)

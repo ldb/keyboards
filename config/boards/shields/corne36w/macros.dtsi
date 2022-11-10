@@ -23,3 +23,5 @@ MACRO(game_layer, &tog GAME)
 
 // CMD + Tab
 MACRO(cmd_tab, &sk LGUI &kp TAB)
+
+MACRO(cmd_back, &sk LGUI &kp LEFT_BRACKET)
