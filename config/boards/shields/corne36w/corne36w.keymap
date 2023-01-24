@@ -57,6 +57,15 @@
       flavor = "hold-preferred";
       bindings = <&mo>, <&kp>;
     };
+
+    // Tap-dance is used for the alt-tab macro
+    td0: tap_dance_0 {
+      compatible = "zmk,behavior-tap-dance";
+      label = "TAP_DANCE_0";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp TAB>, <&kp TAB>, <&kp TAB>;
+    };
   };
 
   /*
