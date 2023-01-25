@@ -74,6 +74,15 @@
       &sk - Sticky Key - Key is pressed until another key is pressed (e.g sticky shift)
       &sl - Sticky layer - Same as &sk but with layers
 
+  Important Keys:
+  LGUI
+  LSHIFT
+  LCTRL BSPC
+  SPACE
+  MO(NUM)
+  MO(NAV)
+
+
   */
                                                      
   keymap {
@@ -89,7 +98,7 @@
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &kp Z         &kp X         &kp C         &kp V              &kp B        &kp N         &kp M         &kp COMMA     &kp DOT      &kp SLASH
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                        &skq LSHIFT     MO(NUM)      &kp LGUI          &kp SPACE       MO(NAV)	    &mt LCTRL BSPC
+                                        &mt LCTRL BSPC   MO(NUM)      &kp LGUI         &kp SPACE     &mt MO(NAV) ENTER	&kp LSHIFT
         //                              ╰────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;
     };
@@ -100,7 +109,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &kp Q         &kp W          XXX           XXX           XXX              &kp ESC       &kp PG_UP     &kp UP        &kp PG_DN     &kp BSPC
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             XXX           XXX            XXX           XXX           XXX              &kp TAB       &kp LEFT      &kp DOWN      &kp RIGHT     &kp ENTER
+             XXX           &kp LC(LA(LEFT)) &kp LC(LA(F)) &kp LC(LA(RIGHT)) XXX        &kp TAB       &kp LEFT      &kp DOWN      &kp RIGHT     &kp ENTER
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              XXX           XXX            XXX           XXX           XXX              &kp MINUS     &kp EQUAL     &kp SQT       XXX          &kp BACKSLASH
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
