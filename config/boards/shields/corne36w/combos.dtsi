@@ -65,4 +65,4 @@ COMBO(gaming_off, &macro_game_layer, 9 19 29, GAME)
 /* Window Layout */
 COMBO(window_left, &kp LG(LALT(LEFT)), 11 12 , NAV)
 COMBO(window_right, &kp LG(LALT(RIGHT)), 12 13, NAV)
-COMBO(window_fullscreen &KP LG(LALT(F)), 11 12 13, NAV)
+COMBO(window_fullscreen, &KP LG(LALT(F)), 11 12 13, NAV)
