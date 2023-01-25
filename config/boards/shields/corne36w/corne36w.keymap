@@ -74,13 +74,6 @@
       &sk - Sticky Key - Key is pressed until another key is pressed (e.g sticky shift)
       &sl - Sticky layer - Same as &sk but with layers
 
-  Important Keys:
-  LGUI
-  LSHIFT
-  LCTRL BSPC
-  SPACE
-  MO(NUM)
-  MO(NAV)
 
 
   */
@@ -98,7 +91,7 @@
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &kp Z         &kp X         &kp C         &kp V              &kp B        &kp N         &kp M         &kp COMMA     &kp DOT      &kp SLASH
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                        &mt LCTRL BSPC   MO(NUM)      &kp LGUI         &kp SPACE     &mt MO(NAV) ENTER	&kp LSHIFT
+                                        &mt LCTRL BSPC   MO(NUM)      &kp LGUI         &kp SPACE     MO(NAV)     	 &kp LSHIFT
         //                              ╰────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;
     };
