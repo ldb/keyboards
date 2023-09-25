@@ -38,8 +38,6 @@ endchoice
 
 endif # LVGL
 
-endif
-
 if ZMK_BACKLIGHT
 
 config PWM
