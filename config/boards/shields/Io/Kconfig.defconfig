@@ -1,6 +1,0 @@
-if SHIELD_IO
-
-config ZMK_KEYBOARD_NAME
-	default "Io"
-
-endif
