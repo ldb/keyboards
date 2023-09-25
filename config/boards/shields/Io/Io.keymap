@@ -1,0 +1,82 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+&sk {
+  release-after-ms = <STICKY_KEY_TIMEOUT>;
+};
+
+&caps_word {
+  continue-list = <UNDERSCORE MINUS BACKSPACE>;
+};
+
+&kscan0 {
+  debounce-period = <14>;
+};
+
+/ {
+  behaviors {
+
+    skq: sticky_key_quick_release {
+      compatible = "zmk,behavior-sticky-key";
+      label = "STICKY_KEY_QUICK_RELEASE";
+      #binding-cells = <1>;
+      bindings = <&kp>;
+      quick-release;
+      release-after-ms = <STICKY_KEY_TIMEOUT>;
+    };
+
+    // Sticky key on tap, normal key on hold
+    // Useful for modifier-clicking without the modifier remaining active
+    nk: not_so_sticky_key {
+      compatible = "zmk,behavior-hold-tap";
+      label = "NOT_SO_STICKY_KEY";
+      #binding-cells = <2>;
+      tapping_term_ms = <200>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&sk>;
+    };
+
+    // A hold-tap that activates without delay (like `&mo`)
+    mo_tap: mo_with_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "MO_WITH_TAP";
+      #binding-cells = <2>;
+      tapping_term_ms = <0>;
+      retro-tap;
+      flavor = "hold-preferred";
+      bindings = <&mo>, <&kp>;
+    };
+  };
+
+  /*
+    LAYERS
+      &mo - Momentary Layer switch
+      &lt - Layer Tap - Enable layer when held, key when tapped
+      &to - Enable layer permanently, disables all others but base
+      &tog - Toggle layer until manually disabled
+    
+    OTHERS
+      &kp - Key press, nothing more
+      &mt - Mod-Tap - Key if held, different key if tapped
+      &sk - Sticky Key - Key is pressed until another key is pressed (e.g sticky shift)
+      &sl - Sticky layer - Same as &sk but with layers
+
+  */
+                                                     
+  keymap {
+    compatible = "zmk,keymap";
+
+    base_layer {
+      label = "HXY";
+      bindings = <
+        &kp Q &kp Q &kp W &kp E &kp R &kp T &kp Y &kp Y  &kp I &kp O &kp P &kp BSPC
+        &kp A &kp A &kp S &kp D &kp F &kp G &kp H &kp J  &kp K &kp L &kp SEMI &kp SEMI
+        &kp Z &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp SLASH
+        &kp Z &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp SLASH
+      >;
+    };
+
+  };
+};
