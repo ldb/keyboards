@@ -51,7 +51,6 @@ COMBO(prev, &kp C_PREV, 26 27, NAV)
 COMBO(next, &kp C_NEXT, 27 28, NAV)
 
 /* Keyboard */
-COMBO(reset, &reset, 11 12 13 17, BASE)
 COMBO(bootloader, &bootloader, 14 15 24 25, BASE)
 // COMBO(bt0, &bt BT_SEL 0, 1 2, BASE)
 // COMBO(bt1, &bt BT_SEL 1, 2 3, BASE)
