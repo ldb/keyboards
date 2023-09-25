@@ -2,8 +2,8 @@
 #define ___ &trans
 
 #define BASE 0
-#define NAV 1
-#define NUM 2
+#define LOW 1
+#define RSE 2
 #define GAME 3
 
 #define SK(KEY) &nk KEY KEY
