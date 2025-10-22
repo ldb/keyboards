@@ -85,11 +85,11 @@
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K        &kp L         &kp SEMI
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &kp Z         &kp X         &kp C         &kp V              &kp B        &kp N         &kp M         &kp COMMA     &kp DOT      &kp SLASH
+             &kp Z         &kp X         &kp C         &kp V              &kp B        &kp N         &kp M       &mt LCTRL COMMA &mt LALT DOT    &kp SLASH
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                        &skq LSHIFT     MO(NUM)      &kp LGUI        &kp SPACE       MO(NAV)	    &mt LCTRL BSPC
+                                        &kp V           MO(NUM)      &kp LGUI      &mt LSHIFT SPACE   MO(NAV)	    &mt LCTRL BSPC
         //                              ╰────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-      >;
+      >;                                // V is mirrored here because the pin is fried on MCU
     };
 
     nav_layer {
@@ -98,7 +98,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              XXX           XXX            XXX           XXX           XXX              &kp TAB        &kp PG_UP     &kp UP        &kp PG_DN     &kp BSPC
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             XXX           XXX            XXX           XXX           XXX              &kp ESC        &kp LEFT      &kp DOWN      &kp RIGHT     &kp ENTER
+             XXX           XXX            XXX           XXX           XXX              &kp LEFT        &kp DOWN      &kp PG_UP      &kp RIGHT     &kp ENTER
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              XXX           XXX            XXX           XXX           XXX               &kp MINUS     &kp EQUAL     &kp SQT       XXX          &kp BACKSLASH
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
@@ -121,16 +121,5 @@
         //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;
     };
-  
-    game_layer {
-      label = "GAME";
-      bindings = <
-             &kp ESC         &kp Q         &kp W         &kp E         &kp R              &kp Y         &kp U         &kp I         &kp O         &kp P
-             &kp LSHIFT      &kp A         &kp S         &kp D         &kp G             &kp H         &kp J         &kp K        &kp L         &kp SEMI
-             &kp LCTRL       &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT      &kp SLASH
-                                            XXX         &kp SPACE      XXX             &mt LCTRL SPACE   &tog GAME	    &kp ENTER
-      >;
-    };
-
   };
 };
