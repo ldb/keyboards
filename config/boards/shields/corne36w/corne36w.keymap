@@ -16,6 +16,14 @@
   debounce-period = <14>;
 };
 
+&mt {
+    tapping-term-ms = <100>; // This is the value already set by default
+};
+
+&lt {
+    tapping-term-ms = <100>; // This is the value already set by default
+};
+
 / {
   combos {
     #include "combos.dtsi"
@@ -87,7 +95,7 @@
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &kp Z         &kp X         &kp C         &kp V              &kp B        &kp N         &kp M       &mt LCTRL COMMA &mt LALT DOT    &kp SLASH
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                        &kp V           MO(NUM)      &kp LGUI      &mt LSHIFT SPACE   MO(NAV)	    &mt LCTRL BSPC
+                                            &kp V      &lt NUM TAB   &mt LGUI ESC    &mt LSHIFT SPACE  &lt NAV ENTER	&mt LCTRL BSPC
         //                              ╰────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
       >;                                // V is mirrored here because the pin is fried on MCU
     };
@@ -96,9 +104,9 @@
       label = "NAV";
       bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             XXX           XXX            XXX           XXX           XXX              &kp TAB        &kp PG_UP     &kp UP        &kp PG_DN     &kp BSPC
+             &kp TAB           XXX            XXX           XXX           XXX           &kp TAB        &kp PG_DN     &kp PG_UP     XXX         &kp BSPC
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             XXX           XXX            XXX           XXX           XXX              &kp LEFT        &kp DOWN      &kp PG_UP      &kp RIGHT     &kp ENTER
+             &kp ESC           XXX            XXX           XXX           XXX           &kp LEFT        &kp DOWN      &kp UP      &kp RIGHT     &kp ENTER
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              XXX           XXX            XXX           XXX           XXX               &kp MINUS     &kp EQUAL     &kp SQT       XXX          &kp BACKSLASH
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
