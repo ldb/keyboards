@@ -2,7 +2,7 @@
 #define ___ &trans
 
 #define BASE 0
-#define LOW 1
+#define LWR 1
 #define RSE 2
 #define GAME 3
 
