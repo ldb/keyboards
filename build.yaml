@@ -23,6 +23,5 @@ include:
   - board: nice_nano
     shield: settings_reset
   - board: lpgalaxy_blank_slate
-    snippet: studio-rpc-usb-uart
   - board: lpgalaxy_blank_slate
     shield: settings_reset
