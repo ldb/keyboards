@@ -6,6 +6,7 @@
 #define BASE 0
 #define LWR 1
 #define RSE 2
+#define HPR 3
 
 #define SK(KEY) &nk KEY KEY
 #define MO(LAYER) &mo_tap LAYER F24
